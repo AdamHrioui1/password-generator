@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(246, 246, 246);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("bubble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 10px;
+    max-width: 500px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.show_pwd_container {
+    position: relative;
+    width: 100%;
+}
+
+.show_pwd_container input {
+    width: 100%;
+    padding: 10px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.copy {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+
+    width: 30px;
+    height: 30px;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.inputs_wrapper {
+    width: 100%;
+}
+
+.length {
+    padding: 5px;
+
+    background: transparent;
+    border: 1px solid #ddd;
+    outline: none;
+
+    color: #fff;
+    font-weight: bold;
+}
+
+.inputs_wrapper .element {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs_wrapper .element input {
+    padding-left: 10px;
+}
+
+.button_container {
+    width: 100%;
+}
+
+.button_container .getPwd {
+    width: 100%;
+
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+    
+    cursor: pointer;
+    opacity: 0.9;
+    transition: .3s;
+}
+
+.button_container .getPwd:hover {
+    opacity: 1;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="show_pwd_container">
+            <input type="text" id="showPwd" autofocus />
+            <button class="copy" id="copy" ><i class="fal fa-copy"></i></button>
+        </div>
+
+        <div class="inputs_wrapper">
+            <div class="element">
+                <label for="length">Length : </label>
+                <input class="length" type="number" id="length" min="4" max="40" value="10" />
+            </div>
+            <div class="element">
+                <label for="uppercase">Uppercase : </label>
+                <input type="checkbox" id="uppercase" />
+            </div>
+            <div class="element">
+                <label for="lowercase">Lowercase : </label>
+                <input type="checkbox" id="lowercase" />
+            </div>
+            <div class="element">
+                <label for="number">Number : </label>
+                <input type="checkbox" id="number" checked />
+            </div>
+            <div class="element">
+                <label for="symbole">Symbole : </label>
+                <input type="checkbox" id="symbole" />
+            </div>
+        </div>
+        
+        <div class="button_container">
+            <button class="getPwd" id="getPwd" >Get password</button>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
